@@ -3,11 +3,10 @@ package org.example.entity;
 import java.util.Arrays;
 
 public class IntArray {
-
     private int[] array;
 
-    IntArray() {};
-    IntArray(int[] array) {
+    public IntArray() {}
+    public IntArray(int[] array) {
         this.array = array.clone();
     }
 
