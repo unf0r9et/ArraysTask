@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.util.Optional;
 
 public class MinMaxServiceImpl implements MinMaxService {
+
     @Override
     public Optional<Integer> findMin(IntArray entity) {
         int[] array = entity.getArray();
