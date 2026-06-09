@@ -8,9 +8,9 @@ import org.apache.logging.log4j.Logger;
 public class FindByIdSpecification implements ArraySpecification {
     private static final Logger logger = LogManager.getLogger();
 
-    private final int id;
+    private final long id;
 
-    public FindByIdSpecification(int id) {
+    public FindByIdSpecification(long id) {
         this.id = id;
     }
 

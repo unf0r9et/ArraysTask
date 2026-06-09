@@ -9,11 +9,11 @@ import org.apache.logging.log4j.Logger;
 public class MaxInRangeSpecification implements ArraySpecification {
     private static final Logger logger = LogManager.getLogger();
 
-    private final double min;
-    private final double max;
+    private final int min;
+    private final int max;
     private final ArrayWarehouseImpl warehouse;
 
-    public MaxInRangeSpecification(double min, double max, ArrayWarehouseImpl warehouse) {
+    public MaxInRangeSpecification(int min, int max, ArrayWarehouseImpl warehouse) {
         this.min = min;
         this.max = max;
         this.warehouse = warehouse;

@@ -24,10 +24,10 @@ public class ArrayObserverImpl implements ArrayObserver {
         int min = array[0];
         int max = array[0];
 
-        for (int d : array) {
-            sum += d;
-            if (d < min) min = d;
-            if (d > max) max = d;
+        for (int element : array) {
+            sum += element;
+            if (element < min) min = element;
+            if (element > max) max = element;
         }
 
         double average = (double) sum / array.length;

@@ -11,10 +11,10 @@ public class SumGreaterThanSpecification implements ArraySpecification {
 
     private static final Logger logger = LogManager.getLogger();
 
-    private double threshold;
+    private int threshold;
     private ArrayWarehouseImpl warehouse;
 
-    public SumGreaterThanSpecification(double threshold, ArrayWarehouseImpl warehouse) {
+    public SumGreaterThanSpecification(int threshold, ArrayWarehouseImpl warehouse) {
         this.threshold = threshold;
         this.warehouse = warehouse;
     }
