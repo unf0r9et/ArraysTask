@@ -17,7 +17,7 @@ public class IntArray {
         this.array = array.clone();
     }
 
-    public IntArray(int id, int[] array, ArrayObserver observer) {
+    public IntArray(long id, int[] array, ArrayObserver observer) {
         this.id = id;
         this.array = array;
         this.observer = observer;
@@ -40,6 +40,7 @@ public class IntArray {
 
     public void setArray(int[] array) {
         this.array = array.clone();
+        notifyObserver();
     }
 
     public void notifyObserver() {
