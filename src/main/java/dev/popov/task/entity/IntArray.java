@@ -1,21 +1,51 @@
-package org.example.entity;
+package dev.popov.task.entity;
+
+import dev.popov.task.observer.ArrayObserver;
 
 import java.util.Arrays;
 
 public class IntArray {
-    private int[] array;
 
-    public IntArray() {}
+    private long id;
+    private int[] array;
+    private ArrayObserver observer;
+
+    public IntArray() {
+    }
+
     public IntArray(int[] array) {
         this.array = array.clone();
     }
 
+    public IntArray(int id, int[] array, ArrayObserver observer) {
+        this.id = id;
+        this.array = array;
+        this.observer = observer;
+    }
+
     public int[] getArray() {
-        return array;
+        return array.clone();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setElement(int index, int value) {
+        if (index >= 0 && index < array.length) {
+            array[index] = value;
+            notifyObserver();
+        }
     }
 
     public void setArray(int[] array) {
         this.array = array.clone();
+    }
+
+    public void notifyObserver() {
+        if (observer != null) {
+            observer.update(this);
+        }
     }
 
     @Override
@@ -32,8 +62,11 @@ public class IntArray {
 
     @Override
     public String toString() {
-        return "IntArray{" +
-                "array=" + Arrays.toString(array) +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("IntArray{");
+        sb.append("array=");
+        sb.append(Arrays.toString(array));
+        sb.append('}');
+        return sb.toString();
     }
 }
