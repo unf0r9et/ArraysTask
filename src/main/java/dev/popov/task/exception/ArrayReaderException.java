@@ -1,6 +1,6 @@
-package org.example.exception;
+package dev.popov.task.exception;
 
-public class ArrayReaderException extends RuntimeException {
+public class ArrayReaderException extends Exception {
     public ArrayReaderException(String message, Throwable cause) {
         super(message, cause);
     }

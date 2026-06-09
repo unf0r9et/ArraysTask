@@ -1,9 +1,8 @@
-package org.example.service.impl;
+package dev.popov.task.service.impl;
 
-import org.example.entity.IntArray;
-import org.example.service.MinMaxService;
+import dev.popov.task.entity.IntArray;
+import dev.popov.task.service.MinMaxService;
 
-import java.lang.reflect.Array;
 import java.util.Optional;
 
 public class MinMaxServiceImpl implements MinMaxService {

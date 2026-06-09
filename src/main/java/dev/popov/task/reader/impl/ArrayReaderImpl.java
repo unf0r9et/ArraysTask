@@ -1,7 +1,7 @@
-package org.example.reader.impl;
+package dev.popov.task.reader.impl;
 
-import org.example.exception.ArrayReaderException;
-import org.example.reader.ArrayReader;
+import dev.popov.task.exception.ArrayReaderException;
+import dev.popov.task.reader.ArrayReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

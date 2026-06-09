@@ -1,6 +1,6 @@
-package org.example.parser.impl;
+package dev.popov.task.parser.impl;
 
-import org.example.parser.ArrayParser;
+import dev.popov.task.parser.ArrayParser;
 
 import java.util.ArrayList;
 import java.util.List;

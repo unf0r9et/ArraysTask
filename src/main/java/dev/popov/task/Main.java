@@ -1,12 +1,12 @@
-package org.example;
+package dev.popov.task;
 
-import org.example.exception.ArrayReaderException;
-import org.example.parser.ArrayParser;
-import org.example.parser.impl.ArrayParserImpl;
-import org.example.reader.ArrayReader;
-import org.example.reader.impl.ArrayReaderImpl;
-import org.example.validator.ArrayValidator;
-import org.example.validator.impl.ArrayValidatorImpl;
+import dev.popov.task.exception.ArrayReaderException;
+import dev.popov.task.parser.ArrayParser;
+import dev.popov.task.parser.impl.ArrayParserImpl;
+import dev.popov.task.reader.ArrayReader;
+import dev.popov.task.reader.impl.ArrayReaderImpl;
+import dev.popov.task.validator.ArrayValidator;
+import dev.popov.task.validator.impl.ArrayValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +21,7 @@ public class Main {
         ArrayValidator validator = new ArrayValidatorImpl();
         ArrayParser parser = new ArrayParserImpl();
 
-        String path = "src/main/resources/arrays.txt";
+        String path = "files/arrays.txt";
 
         List<String> lines = reader.readFile(path);
 

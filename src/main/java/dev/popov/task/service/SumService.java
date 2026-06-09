@@ -1,6 +1,6 @@
-package org.example.service;
+package dev.popov.task.service;
 
-import org.example.entity.IntArray;
+import dev.popov.task.entity.IntArray;
 
 import java.util.Optional;
 

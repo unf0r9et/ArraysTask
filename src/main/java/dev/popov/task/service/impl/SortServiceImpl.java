@@ -1,7 +1,7 @@
-package org.example.service.impl;
+package dev.popov.task.service.impl;
 
-import org.example.entity.IntArray;
-import org.example.service.SortService;
+import dev.popov.task.entity.IntArray;
+import dev.popov.task.service.SortService;
 
 public class SortServiceImpl implements SortService {
 

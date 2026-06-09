@@ -1,6 +1,6 @@
-package org.example.validator.impl;
+package dev.popov.task.validator.impl;
 
-import org.example.validator.ArrayValidator;
+import dev.popov.task.validator.ArrayValidator;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

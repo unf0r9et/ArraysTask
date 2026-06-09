@@ -1,7 +1,7 @@
-package org.example.service;
+package dev.popov.task.service;
 
-import org.example.entity.IntArray;
-import org.example.service.impl.MinMaxServiceImpl;
+import dev.popov.task.entity.IntArray;
+import dev.popov.task.service.impl.MinMaxServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

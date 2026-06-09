@@ -1,6 +1,6 @@
-package org.example.validator;
+package dev.popov.task.validator;
 
-import org.example.validator.impl.ArrayValidatorImpl;
+import dev.popov.task.validator.impl.ArrayValidatorImpl;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
